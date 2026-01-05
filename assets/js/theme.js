@@ -83,3 +83,11 @@
   // Initialize on DOM ready
   document.addEventListener('DOMContentLoaded', initTheme);
 })();
+const hamburger = document.getElementById('hamburgerBtn');
+const navLinks = document.getElementById('navLinks');
+
+if (hamburger && navLinks) {
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+}
