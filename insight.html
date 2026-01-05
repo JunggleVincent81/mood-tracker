@@ -21,25 +21,36 @@
 <body>
 
   <!-- ================= NAVBAR ================= -->
-  <header class="navbar">
-    <div class="container navbar-content">
-      <div class="logo">
-        <span>Mood</span><strong>Tracker</strong>
-      </div>
+ <header class="navbar">
+  <div class="container navbar-content">
 
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="mood.html">Mood</a>
-        <a href="history.html">History</a>
-        <a href="insight.html" class="active">Insight</a>
-        <a href="settings.html">Settings</a>
-      </nav>
+    <!-- LOGO -->
+    <div class="logo">
+      <span>Mood</span><strong>Tracker</strong>
+    </div>
+
+    <!-- NAV (DESKTOP & MOBILE MENU) -->
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="mood.html">Mood</a>
+      <a href="history.html">History</a>
+      <a href="insight.html">Insight</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+
+    <!-- RIGHT ACTIONS -->
+    <div class="nav-actions">
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+        ☰
+      </button>
 
       <button id="themeToggle" class="btn-secondary">
         Switch Theme
       </button>
     </div>
-  </header>
+
+  </div>
+</header>
 
   <!-- ================= MAIN ================= -->
   <main class="page">
