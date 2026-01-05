@@ -21,25 +21,37 @@
 <body>
 
   <!-- ================= NAVBAR ================= -->
-  <header class="navbar">
-    <div class="container navbar-content">
-      <div class="logo">
-        <span>Mood</span><strong>Tracker</strong>
-      </div>
+ <header class="navbar">
+  <div class="container navbar-content">
 
-      <nav class="nav-links">
-        <a href="index.html" class="active">Home</a>
-        <a href="mood.html">Mood</a>
-        <a href="history.html">History</a>
-        <a href="insight.html">Insight</a>
-        <a href="settings.html">Settings</a>
-      </nav>
+    <!-- LOGO -->
+    <div class="logo">
+      <span>Mood</span><strong>Tracker</strong>
+    </div>
+
+    <!-- NAV (DESKTOP & MOBILE MENU) -->
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="mood.html">Mood</a>
+      <a href="history.html">History</a>
+      <a href="insight.html">Insight</a>
+      <a href="settings.html">Settings</a>
+    </nav>
+
+    <!-- RIGHT ACTIONS -->
+    <div class="nav-actions">
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+        ☰
+      </button>
 
       <button id="themeToggle" class="btn-secondary">
         Switch Theme
       </button>
     </div>
-  </header>
+
+  </div>
+</header>
+
 
   <!-- ================= HERO ================= -->
   <main>
@@ -68,38 +80,41 @@
       </div>
     </section>
 
-    <!-- ================= FEATURES ================= -->
-    <section class="features">
-      <div class="container">
-        <h2 class="section-title">What You Can Do</h2>
+  <!-- ================= FEATURES ================= -->
+<section class="features">
+  <div class="container">
+    <h2 class="section-title">What You Can Do</h2>
 
-        <div class="feature-grid">
-          <div class="card feature-item">
-            <h3>Track Your Mood</h3>
-            <p>
-              Log your daily emotional state with a simple,
-              non-judgmental interface.
-            </p>
-          </div>
+    <div class="feature-grid">
 
-          <div class="card feature-item">
-            <h3>View History</h3>
-            <p>
-              Look back at your emotional journey through
-              a clean and readable timeline.
-            </p>
-          </div>
+      <a href="mood.html" class="card feature-item">
+        <h3>Track Your Mood</h3>
+        <p>
+          Log your daily emotional state with a simple,
+          non-judgmental interface.
+        </p>
+      </a>
 
-          <div class="card feature-item">
-            <h3>Gain Insights</h3>
-            <p>
-              Identify patterns and trends that help you
-              better understand yourself.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+      <a href="history.html" class="card feature-item">
+        <h3>View History</h3>
+        <p>
+          Look back at your emotional journey through
+          a clean and readable timeline.
+        </p>
+      </a>
+
+      <a href="insight.html" class="card feature-item">
+        <h3>Gain Insights</h3>
+        <p>
+          Identify patterns and trends that help you
+          better understand yourself.
+        </p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
 
     <!-- ================= CTA ================= -->
     <section class="cta">
