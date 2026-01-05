@@ -1,0 +1,90 @@
+/* =====================================================
+   DESIGN TOKENS
+   Mood Tracker – Theme Variables
+   ===================================================== */
+
+/* ================= DEFAULT THEME
+   Calm Blue & Slate
+   ================= */
+:root {
+  /* Background */
+  --bg-primary: #F1F5FF;        /* soft blue */
+  --bg-secondary: #FFFFFF;
+  --bg-muted: #E8EEFF;
+
+  /* Text */
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #94A3B8;
+
+  /* Brand */
+  --color-primary: #3B82F6;
+  --color-primary-hover: #2563EB;
+  --color-secondary: #64748B;
+
+  /* Mood */
+  --mood-positive: #22C55E;
+  --mood-neutral: #FACC15;
+  --mood-negative: #EF4444;
+
+  /* Border */
+  --border-color: #D6E0FF;
+
+  /* UI */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+
+  /* Shadow (blue tone) */
+  --shadow-sm: 0 6px 18px rgba(59, 130, 246, 0.15);
+  --shadow-md: 0 25px 60px rgba(59, 130, 246, 0.22);
+
+  /* Transition */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
+}
+
+
+/* ================= LAVENDER THEME
+   Soft Lavender & Night
+   ================= */
+[data-theme="lavender"] {
+  /* Background */
+  --bg-primary: #F3F0FF;        /* lavender tint */
+  --bg-secondary: #FFFFFF;
+  --bg-muted: #ECE7FF;
+
+  /* Text */
+  --text-primary: #1E1B4B;
+  --text-secondary: #4C4B63;
+  --text-muted: #9B9AC2;
+
+  /* Brand */
+  --color-primary: #8B5CF6;
+  --color-primary-hover: #7C3AED;
+  --color-secondary: #A78BFA;
+
+  /* Mood */
+  --mood-positive: #4ADE80;
+  --mood-neutral: #FCD34D;
+  --mood-negative: #F87171;
+
+  /* Border */
+  --border-color: #DDD6FE;
+
+  /* Shadow (ungu halus) */
+  --shadow-sm: 0 4px 16px rgba(139, 92, 246, 0.18);
+  --shadow-md: 0 20px 50px rgba(139, 92, 246, 0.25);
+}
+
+
+/* ================= GLOBAL TRANSITION
+   Smooth Theme Switching
+   ================= */
+* {
+  transition:
+    background-color var(--transition-base),
+    color var(--transition-base),
+    border-color var(--transition-base),
+    box-shadow var(--transition-base);
+}
