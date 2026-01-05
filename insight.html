@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mood Insight – Mood Tracker</title>
+  <meta name="description" content="Discover patterns and insights from your mood tracking history." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="container navbar-content">
+      <div class="logo">
+        <span>Mood</span><strong>Tracker</strong>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="mood.html">Mood</a>
+        <a href="history.html">History</a>
+        <a href="insight.html" class="active">Insight</a>
+        <a href="settings.html">Settings</a>
+      </nav>
+
+      <button id="themeToggle" class="btn-secondary">
+        Switch Theme
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main class="page">
+    <section class="container insight-section">
+
+      <header class="page-header">
+        <h1>Your Mood Insights</h1>
+        <p>
+          A summary of emotional patterns based on
+          your recent mood entries.
+        </p>
+      </header>
+
+      <!-- ================= SUMMARY CARDS ================= -->
+      <section class="insight-summary">
+        <div class="card insight-card">
+          <h3>Overall Mood</h3>
+          <p class="insight-value mood-positive">Mostly Positive 😊</p>
+          <p class="insight-desc">
+            You have been feeling generally good over the past week.
+          </p>
+        </div>
+
+        <div class="card insight-card">
+          <h3>Most Common Mood</h3>
+          <p class="insight-value">Good 🙂</p>
+          <p class="insight-desc">
+            This mood appears most frequently in your logs.
+          </p>
+        </div>
+
+        <div class="card insight-card">
+          <h3>Lowest Mood Day</h3>
+          <p class="insight-value mood-negative">Wednesday 😕</p>
+          <p class="insight-desc">
+            Mid-week seems to be more challenging emotionally.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================= CHART ================= -->
+      <section class="insight-chart card">
+        <header class="chart-header">
+          <h2>Mood Trend</h2>
+          <p>
+            Visual representation of your mood changes
+            over time.
+          </p>
+        </header>
+
+        <!-- Chart Placeholder -->
+        <div class="chart-wrapper">
+          <canvas id="moodChart" aria-label="Mood Trend Chart"></canvas>
+        </div>
+      </section>
+
+      <!-- ================= TEXT INSIGHT ================= -->
+      <section class="insight-text card">
+        <h2>Weekly Reflection</h2>
+        <p>
+          Your mood tends to improve toward the end of the week.
+          Consider planning lighter tasks mid-week to reduce stress
+          and maintain emotional balance.
+        </p>
+      </section>
+
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Mood Tracker. All rights reserved.</p>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="about.html#privacy">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ================= JS ================= -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/insight.js"></script>
+
+</body>
+</html>

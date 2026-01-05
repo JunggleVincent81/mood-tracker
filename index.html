@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mood Tracker – Track Your Emotional Journey</title>
+  <meta name="description" content="A calm and minimal mood tracker to help you understand your emotional patterns." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="container navbar-content">
+      <div class="logo">
+        <span>Mood</span><strong>Tracker</strong>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="mood.html">Mood</a>
+        <a href="history.html">History</a>
+        <a href="insight.html">Insight</a>
+        <a href="settings.html">Settings</a>
+      </nav>
+
+      <button id="themeToggle" class="btn-secondary">
+        Switch Theme
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Understand Your Mood.<br />One Day at a Time.</h1>
+          <p>
+            A calm and simple way to track your emotional state,
+            recognize patterns, and reflect on your mental well-being.
+          </p>
+
+          <div class="hero-actions">
+            <a href="mood.html" class="btn-primary">Start Tracking</a>
+            <a href="about.html" class="btn-secondary">Learn More</a>
+          </div>
+        </div>
+
+        <div class="hero-preview card">
+          <h3>Today’s Mood</h3>
+          <p class="preview-mood mood-positive">Feeling Calm 😊</p>
+          <p class="preview-note">
+            “A good day to slow down and focus.”
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURES ================= -->
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">What You Can Do</h2>
+
+        <div class="feature-grid">
+          <div class="card feature-item">
+            <h3>Track Your Mood</h3>
+            <p>
+              Log your daily emotional state with a simple,
+              non-judgmental interface.
+            </p>
+          </div>
+
+          <div class="card feature-item">
+            <h3>View History</h3>
+            <p>
+              Look back at your emotional journey through
+              a clean and readable timeline.
+            </p>
+          </div>
+
+          <div class="card feature-item">
+            <h3>Gain Insights</h3>
+            <p>
+              Identify patterns and trends that help you
+              better understand yourself.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="cta">
+      <div class="container cta-box">
+        <h2>Start Reflecting Today</h2>
+        <p>
+          Your emotions matter. Begin tracking your mood
+          and build self-awareness step by step.
+        </p>
+        <a href="mood.html" class="btn-primary">Track Today’s Mood</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Mood Tracker. All rights reserved.</p>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="about.html#privacy">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ================= JS ================= -->
+  <script src="assets/js/theme.js"></script>
+
+</body>
+</html>

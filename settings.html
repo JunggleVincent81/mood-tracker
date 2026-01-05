@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Settings – Mood Tracker</title>
+  <meta name="description" content="Customize your experience and manage preferences." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="container navbar-content">
+      <div class="logo">
+        <span>Mood</span><strong>Tracker</strong>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="mood.html">Mood</a>
+        <a href="history.html">History</a>
+        <a href="insight.html">Insight</a>
+        <a href="settings.html" class="active">Settings</a>
+      </nav>
+
+      <button id="themeToggle" class="btn-secondary">
+        Switch Theme
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main class="page">
+    <section class="container settings-section">
+
+      <header class="page-header">
+        <h1>Settings</h1>
+        <p>
+          Customize your experience and adjust preferences
+          to suit your needs.
+        </p>
+      </header>
+
+      <!-- ================= THEME SETTINGS ================= -->
+      <section class="card settings-card">
+        <h2>Appearance</h2>
+
+        <div class="setting-item">
+          <div class="setting-info">
+            <h3>Theme</h3>
+            <p>Select a color theme that feels comfortable for you.</p>
+          </div>
+
+          <div class="setting-control">
+            <button class="btn-secondary" data-theme-option="default">
+              Calm Blue
+            </button>
+            <button class="btn-secondary" data-theme-option="lavender">
+              Lavender
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PREFERENCES ================= -->
+      <section class="card settings-card">
+        <h2>Preferences</h2>
+
+        <div class="setting-item">
+          <div class="setting-info">
+            <h3>Daily Reminder</h3>
+            <p>Receive a reminder to log your mood each day.</p>
+          </div>
+
+          <div class="setting-control">
+            <label class="toggle">
+              <input type="checkbox" disabled />
+              <span>Coming Soon</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="setting-item">
+          <div class="setting-info">
+            <h3>Data Export</h3>
+            <p>Download your mood history for personal use.</p>
+          </div>
+
+          <div class="setting-control">
+            <button class="btn-secondary" disabled>
+              Export Data
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= DANGER ZONE ================= -->
+      <section class="card settings-card danger-zone">
+        <h2>Data Management</h2>
+
+        <div class="setting-item">
+          <div class="setting-info">
+            <h3>Reset Mood Data</h3>
+            <p>
+              This will remove all saved mood entries
+              from this browser.
+            </p>
+          </div>
+
+          <div class="setting-control">
+            <button class="btn-danger" disabled>
+              Reset Data
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Mood Tracker. All rights reserved.</p>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="about.html#privacy">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ================= JS ================= -->
+  <script src="assets/js/theme.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mood History – Mood Tracker</title>
+  <meta name="description" content="View your mood history and reflect on your emotional journey." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="container navbar-content">
+      <div class="logo">
+        <span>Mood</span><strong>Tracker</strong>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="mood.html">Mood</a>
+        <a href="history.html" class="active">History</a>
+        <a href="insight.html">Insight</a>
+        <a href="settings.html">Settings</a>
+      </nav>
+
+      <button id="themeToggle" class="btn-secondary">
+        Switch Theme
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main class="page">
+    <section class="container history-section">
+
+      <header class="page-header">
+        <h1>Your Mood History</h1>
+        <p>
+          Review your past moods and see how your emotions
+          have changed over time.
+        </p>
+      </header>
+
+      <!-- ================= FILTER ================= -->
+      <section class="history-filter card">
+        <h2>Filter</h2>
+
+        <div class="filter-group">
+          <label for="filterRange">Time Range</label>
+          <select id="filterRange">
+            <option value="7">Last 7 Days</option>
+            <option value="30">Last 30 Days</option>
+            <option value="all">All Time</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="filterMood">Mood Type</label>
+          <select id="filterMood">
+            <option value="all">All</option>
+            <option value="very-bad">Very Bad</option>
+            <option value="bad">Bad</option>
+            <option value="neutral">Neutral</option>
+            <option value="good">Good</option>
+            <option value="very-good">Very Good</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- ================= TIMELINE ================= -->
+      <section class="history-list">
+
+        <!-- Item -->
+        <article class="card history-item mood-positive">
+          <header class="history-item-header">
+            <h3>Feeling Good 🙂</h3>
+            <time datetime="2026-01-05">January 5, 2026</time>
+          </header>
+          <p class="history-note">
+            Had a productive day and felt calm throughout the evening.
+          </p>
+        </article>
+
+        <!-- Item -->
+        <article class="card history-item mood-neutral">
+          <header class="history-item-header">
+            <h3>Feeling Neutral 😐</h3>
+            <time datetime="2026-01-04">January 4, 2026</time>
+          </header>
+          <p class="history-note">
+            Nothing special today, just a regular routine.
+          </p>
+        </article>
+
+        <!-- Item -->
+        <article class="card history-item mood-negative">
+          <header class="history-item-header">
+            <h3>Feeling Bad 😕</h3>
+            <time datetime="2026-01-03">January 3, 2026</time>
+          </header>
+          <p class="history-note">
+            Felt a bit overwhelmed with tasks and deadlines.
+          </p>
+        </article>
+
+      </section>
+
+      <!-- ================= EMPTY STATE (HIDDEN BY DEFAULT) ================= -->
+      <section class="history-empty card" hidden>
+        <h2>No Mood Data</h2>
+        <p>
+          You haven’t logged any moods yet.
+          Start tracking to see your history here.
+        </p>
+        <a href="mood.html" class="btn-primary">Log Your First Mood</a>
+      </section>
+
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Mood Tracker. All rights reserved.</p>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="about.html#privacy">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ================= JS ================= -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/history.js"></script>
+
+</body>
+</html>

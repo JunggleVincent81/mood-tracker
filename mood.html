@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Log Your Mood – Mood Tracker</title>
+  <meta name="description" content="Log your daily mood and reflect on how you feel today." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="container navbar-content">
+      <div class="logo">
+        <span>Mood</span><strong>Tracker</strong>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="mood.html" class="active">Mood</a>
+        <a href="history.html">History</a>
+        <a href="insight.html">Insight</a>
+        <a href="settings.html">Settings</a>
+      </nav>
+
+      <button id="themeToggle" class="btn-secondary">
+        Switch Theme
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main class="page">
+    <section class="container mood-section">
+
+      <header class="page-header">
+        <h1>How Are You Feeling Today?</h1>
+        <p>
+          Take a moment to reflect and choose the mood
+          that best describes how you feel right now.
+        </p>
+      </header>
+
+      <!-- ================= MOOD SELECTOR ================= -->
+      <section class="mood-selector card">
+        <h2>Select Your Mood</h2>
+
+        <div class="mood-options">
+          <button class="mood-option" data-mood="very-bad">
+            😞
+            <span>Very Bad</span>
+          </button>
+
+          <button class="mood-option" data-mood="bad">
+            😕
+            <span>Bad</span>
+          </button>
+
+          <button class="mood-option" data-mood="neutral">
+            😐
+            <span>Neutral</span>
+          </button>
+
+          <button class="mood-option" data-mood="good">
+            🙂
+            <span>Good</span>
+          </button>
+
+          <button class="mood-option" data-mood="very-good">
+            😄
+            <span>Very Good</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ================= NOTE INPUT ================= -->
+      <section class="mood-note card">
+        <h2>Add a Note (Optional)</h2>
+        <textarea
+          id="moodNote"
+          rows="4"
+          placeholder="Write a short reflection about today..."
+        ></textarea>
+      </section>
+
+      <!-- ================= ACTION ================= -->
+      <section class="mood-action">
+        <button id="saveMood" class="btn-primary">
+          Save Today’s Mood
+        </button>
+
+        <p class="mood-feedback" id="moodFeedback">
+          <!-- feedback text injected by JS -->
+        </p>
+      </section>
+
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Mood Tracker. All rights reserved.</p>
+      <nav>
+        <a href="about.html">About</a>
+        <a href="about.html#privacy">Privacy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ================= JS ================= -->
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/mood.js"></script>
+
+</body>
+</html>
